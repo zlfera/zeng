@@ -1,5 +1,6 @@
 Zeng::Application.routes.draw do
   resources :users
+  get 'users/show'
   get 'static_pages/contact'
   get "static_pages/home"
   get "static_pages/help"

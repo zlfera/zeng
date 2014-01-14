@@ -2,6 +2,13 @@ require 'spec_helper'
 
 describe "UsersPages" do
   subject {page}
+
+describe 'user show' do
+  it "user show" do
+    should have_content '@'
+  end
+end
+
   describe "sigup page" do
     before {visit signup_path}
     it do
