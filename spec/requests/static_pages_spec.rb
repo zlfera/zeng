@@ -1,6 +1,19 @@
 require 'spec_helper'
 
 describe "StaticPages" do
+  describe 'contact us' do
+    it "should have content'contact us'" do
+      visit 'static_pages/contact'
+      expect(page).to have_content('contact us')
+    end
+  end
+  
+  
+  
+  
+  
+  
+  
   describe "home page" do
     it do
       # Run the generator again with the --webrat flag if you want to use webrat methods/matchers

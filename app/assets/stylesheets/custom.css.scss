@@ -1,5 +1,13 @@
 @import "bootstrap";
 
+.debug_dump {
+  box-sizing: border-box;
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+}
+
 h1,h2,h3,h5,h6 {
   line-height: 1;
 }
@@ -61,6 +69,30 @@ textarea {
   text-align: center;
   h1 {
     margin-bottom: 10px; 
+  }
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+  a {
+    color: #555;
+    &:hover {
+      color: #222;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
   }
 }
 
