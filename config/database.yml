@@ -57,8 +57,7 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  database: d1c3v6bp1ue0oc
+  database: DATABASE_URL
   username: jyvnfypqtvdgxo
   password: omUSmfKazXEx3C69zv0w_Z9jbn
-  host: ec2-184-73-194-196.compute-1.amazonaws.com
-  port: 5432
+  timeout: 5000
