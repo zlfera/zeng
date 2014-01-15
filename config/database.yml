@@ -57,7 +57,9 @@ production:
   adapter: postgresql
   encoding: unicode
   database: postgres://jilgvitkydpypu:87mipDZlNXyAMCutbi4lYC
-o3A8@ec2-107-20-234-127.compute-1.amazonaws.com:5432/d7kn7togi05odp
+o3A8@ec2-107-20-234-127.compute-1.amazonaws.com:5432/d7kn7togi05odp         
+HEROKU_POSTGRESQL_GOLD_URL: postgres://ilylswnywlvyzo:L4e00xEHxAbLmKFcrItpcf
+fnf1@ec2-23-23-183-5.compute-1.amazonaws.com:5432/d2aakgh48h6ggb
   pool: 5
   username: zeng
   password:
