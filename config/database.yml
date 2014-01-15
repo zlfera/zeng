@@ -56,7 +56,8 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: zeng_production
+  database: postgres://jilgvitkydpypu:87mipDZlNXyAMCutbi4lYC
+o3A8@ec2-107-20-234-127.compute-1.amazonaws.com:5432/d7kn7togi05odp
   pool: 5
   username: zeng
   password:
