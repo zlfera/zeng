@@ -2,10 +2,12 @@ require 'spec_helper'
 
 describe "StaticPages" do
   describe 'contact us' do
+    subject {page}
+    before {visit 'static_pages/contact'}
     it "should have content'contact us'" do
-      visit 'static_pages/contact'
       expect(page).to have_content('contact us')
     end
+    it {should have_title('zeng')}
   end
   
   
