@@ -14,6 +14,7 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
 # Use postgresql as the database for Active Record
 group :production do
