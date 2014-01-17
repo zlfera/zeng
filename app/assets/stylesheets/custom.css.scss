@@ -1,5 +1,44 @@
 @import "bootstrap";
 
+aside{
+  section{
+    padding: 10px 0;
+    border-top: 1px solid gray;
+    &:first-child{
+      border: 0;
+      padding-top: 0;
+    }
+    span{
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1px;
+    }
+    h1{
+      font-size: 1.4px;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
+  }
+}
+
+.gravatar{
+  margin-right: 10px;
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .debug_dump {
   box-sizing: border-box;
   clear: both;
