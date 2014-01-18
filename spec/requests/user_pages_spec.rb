@@ -13,8 +13,21 @@ describe "UsersPages" do
 
   describe "sigup page" do
     before {visit signup_path}
+    let(:submit) {'create my account'}
+    describe 'with valid information' do
+      it 'should not create user' do
+        expect {click_button submit}.not_to change(User,:count)
+      end
+    end
+    
+
+
+
     it do
       should have_content 'sign up'
     end
+
+    
+
   end
 end
