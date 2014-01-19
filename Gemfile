@@ -4,7 +4,6 @@ ruby '2.1.0'
 gem 'rails', '4.0.2'
 gem 'puma'
 gem 'bootstrap-sass'
-gem 'bcrypt-ruby'
 group :development,:test do
   gem 'sqlite3'
   gem 'rspec-rails'
@@ -48,7 +47,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'bcrypt-ruby'
 
 # Use unicorn as the app server
 # gem 'unicorn'
