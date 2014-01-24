@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     if @user.save
       p 1
     else
-      render 'new'
+      render 'users/new'
     end
   end
   
