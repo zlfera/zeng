@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to(@user)
     else
-      render 'users/new'
+      render 'new'
     end
   end
   
