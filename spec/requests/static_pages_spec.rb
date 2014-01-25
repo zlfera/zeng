@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "StaticPages" do
   describe 'contact us' do
     subject {page}
-    before {visit 'static_pages/contact'}
+    before {visit 'contact'}
     it "should have content'contact us'" do
       expect(page).to have_content('contact us')
     end
@@ -25,13 +25,13 @@ describe "StaticPages" do
   end
   describe 'help page' do
     it 'should have content "help page"' do
-      visit 'static_pages/help'
+      visit 'help'
       expect(page).to have_content('help page')
     end
   end
   describe 'about page' do
     it 'should have content "about us"' do
-      visit 'static_pages/about'
+      visit about_path
       expect(page).to have_content('about us')
     end
   end
