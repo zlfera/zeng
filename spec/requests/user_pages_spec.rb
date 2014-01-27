@@ -14,11 +14,11 @@ describe "UsersPages" do
   describe "sigup page" do
     before {visit signup_path}
     let(:submit) {'create my account'}
-#    describe 'with invalid information' do
-#      it 'should not create user' do
-#        expect {click_button submit}.not_to change(User,:count)
-#      end
-#    end
+    describe 'with invalid information' do
+      it 'should not create user' do
+        expect {click_button submit}.not_to change(User,:count)
+      end
+    end
     describe 'with valid information' do
       before do
         fill_in('Name',with: 'example user')
