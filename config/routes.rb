@@ -1,5 +1,7 @@
 Zeng::Application.routes.draw do
-  resources :users
+  resources(:sessions,only: [:new,:create,:destroy])
+  resources(:users)
+  get('signin',to: 'sessions#new',as: :signin)
   get('contact',to: 'static_pages#contact',as: :contact)
   get('home',to: 'static_pages#home',as: :home)
   get('help',to: 'static_pages#help',as: :help)
