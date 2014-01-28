@@ -7,7 +7,7 @@ describe "StaticPages" do
     it "should have content'contact us'" do
       expect(page).to have_content('contact us')
     end
-    it {should have_title('zeng')}
+    it {should have_title('contact us')}
   end
   
   

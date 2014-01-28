@@ -27,7 +27,7 @@ describe "UsersPages" do
         fill_in('Confirmation',with: 'password')
       end
       it "should create user" do
-        expect {click_button(submit).to(change(User,:count).by(10))}
+        expect {click_button(submit).to(change(User,:count).by(1))}
       end
     end
     
