@@ -14,6 +14,10 @@ describe "AuthenticationPages" do
       before {click_button 'Sign in'}
       it {should(have_title('sign in'))}
       it {should(have_selector('div.alert.alert-error',text: 'Invalid'))}
+      describe 'after visting another page' do
+        before {click_link 'home'}
+        it {should_not(have_selector('div.alert.alert-error'))}
+      end
     end
     describe 'with valid' do
       let(:user) {FactoryGirl.create(:user)}
