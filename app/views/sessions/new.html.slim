@@ -1,17 +1,12 @@
-<% provide(:title,'sign in') %>
-<h1>sign in</h1>
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(:session,url: sessions_path) do |f| %>
-      <%= f.label(:email) %>
-      <%= f.text_field(:email) %>
-
-      <%= f.label(:password) %>
-      <%= f.text_field(:pasword) %>
-
-      <%= f.submit('sign in',class: 'btn btn-large btn-primary') %>
-    <% end %>
-
-    <p>new user?<%= link_to('sign up now',signup_path)%></p>
-  </div>
-</div>
+= provide(:title,'sign in')
+h1 sign in
+div class="row"
+  div class="span6 offset3"
+    = form_for(:session,url: sessions_path) do |f|
+      = f.label(:email)
+      = f.text_field(:email)
+      = f.label(:password)
+      = f.text_field(:pasword)
+      = f.submit('sign in',class: 'btn btn-large btn-primary')
+    p new user?
+      = link_to('sign up now',signup_path)
