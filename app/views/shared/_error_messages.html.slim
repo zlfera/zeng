@@ -1,7 +1,7 @@
 - if @user.errors.any?
   div id="eplanation"
     div class="alert alert-error"
-      the form contains 
+      | the form contains 
       | - pluralize(@user.errors.count,'errors')
     ul
       - @user.errors.full_messages.each do |msg|
