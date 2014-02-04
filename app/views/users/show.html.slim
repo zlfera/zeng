@@ -1,12 +1,8 @@
-<% provide(:title,@user.name) %>
-<title><%= yield :title %></title>
-<div class="row">
-  <aside class="span4">
-    <section>
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
-    </section>
-  </aside>
-</div>
+= provide(:title,@user.name)
+title = yield :title
+div class="row"
+  aside class="span4"
+    section
+      h1
+        = gravatar_for @user
+        = @user.name
