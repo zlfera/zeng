@@ -4,6 +4,7 @@ ruby '2.1.0'
 gem 'rails', '4.0.2'
 gem 'puma'
 gem 'bootstrap-sass'
+gem 'slim-rails'
 group :development,:test do
   gem 'sqlite3'
   gem 'rspec-rails'
