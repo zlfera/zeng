@@ -1,7 +1,7 @@
 = provide(:title,'edit user')
 h1 update your profile
-div
-  div
+.row
+  .span6.offset3
     = form_for(@user,url: {action: 'edit'}) do |f|
       = render 'shared/error_messages'
       = f.label :name
