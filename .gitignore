@@ -27,3 +27,4 @@ cscope.po.out
 cscope.in.out
 development.sqlite3
 test.sqlite3
+vimrc
