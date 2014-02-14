@@ -18,6 +18,7 @@ group :test do
 end
 # Use postgresql as the database for Active Record
 group :production do
+  gem 'newrelic_rpm'
   gem 'pg'
   gem 'rails_12factor'
 end
