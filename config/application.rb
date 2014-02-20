@@ -25,6 +25,16 @@ module Zeng
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     
+    config.middleware.delete 'Rack::Etag'
+    config.middleware.delete 'Rack::ConditionalGet'
+    config.middleware.delete 'Rack::Cache'
+    config.middleware.delete 'Rack::Lock'
+    config.middleware.delete 'ActionDispatch::RequestId'
+    config.middleware.delete 'ActionDispatch::RemoteIp'
+    config.middleware.delete 'ActionDispatch::Head'
+    config.middleware.delete 'ActionDispatch::BestStandardsSupport'
+    config.middleware.delete 'Rack::Head'
+    
     config.generators do |g|
       g.test_framework :rspec,
       fixtures: true,
